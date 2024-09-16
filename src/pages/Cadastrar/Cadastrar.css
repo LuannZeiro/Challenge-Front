@@ -1,0 +1,130 @@
+/* src/Cadastrar.css */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    color: #727375;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dados, .dados2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: -225px;
+    margin-top: 50px;
+}
+
+.cliente, .fornecedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    max-width: 500px;
+    margin-left: 680px;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+}
+
+input[type="radio"] {
+    width: 24px;
+}
+
+::-webkit-input-placeholder {
+    color: #01A1FD;
+    font: 12px verdana, arial, sans-serif;
+}
+
+p {
+    color: #727375;
+}
+
+.botaoentrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: #01A1FD;
+    color: white;
+    border-radius: 10px;
+}
+.nome, .cpf, .email, .senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Responsividade */
+@media (max-width: 575px) {
+    .logo, h3, .dados, .dados2, .botaoentrar {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .cliente, .fornecedor {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    input, button {
+        width: 100%;
+    }
+
+    .cliente, .fornecedor {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    input, button {
+        width: 100%;
+    }
+
+    .cliente, .fornecedor {
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .cliente, .fornecedor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cliente, .fornecedor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
