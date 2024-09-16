@@ -19,7 +19,6 @@ const App: React.FC = () => {
                 <Route path="/chamado" element={<Chamado />} />
                 <Route path="/chamarforn" element={<ChamarForn />} />
                 <Route path="/chatbot" element={<Chatbot />} />
-                {/* Adicione outras rotas aqui */}
             </Routes>
         </Router>
     );
